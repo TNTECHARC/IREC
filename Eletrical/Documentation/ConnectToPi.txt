@@ -1,0 +1,57 @@
+Here are the instuction to connect to the raspberry pi
+
+First time connecting
+	Download:
+		Putty
+		Bonjour service
+		https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+		https://download.info.apple.com/Mac_OS_X/061-8098.20100603.gthyu/BonjourPSSetup.exe
+
+Instructions to connect to pi
+	Connect the pi using the usb between the mini hdmi and other usb, to your computer
+	wait about 30s-1m
+	open putty and enter "apsync.local" into hostname(or Ip address) field
+	click open
+	if prompted with popup window click yes
+	when you get to the terminal the type "pi" for username and "pixhawk" for the password
+	
+Once connected
+	type: sudo ifconfig wlan0 down
+		  sudo ifconfig wlan0 up
+	wait 30s
+	type: ifconfig
+		In the output look in wlan0 for "inet 10.129.x.x"
+			if inet does not start with 10.129.x.x retry the command "ifconfig"
+		Note: the 10.129.x.x number can be used instead of "apsync.local" to connect to the pi
+	You are now good to go 
+	
+Edit files on pi using notepad++ on windows
+	Download notepad++
+	open notepad++
+	select plugins -> plugins Admin...
+		search for "NppFTP"
+			check the box next to NppFTP
+			click install
+	once installed select plugins -> NppFTP -> show NppFTP window
+		click the gear icon on the right side window -> profile settings
+			click Add new button and name it whatever you want
+			Enter these value for the following fields
+				Hostname: "apsync.local" or 10.129.x.x (from earlyer)
+				Connection type: sftp
+				Port: 22
+				Username: pi
+				Password: pixhawk
+				initial directory: /home/pi/python (if your working on python scrypt)
+			click close
+		click on blue icon in the same row as gear icon -> whatever you named your profile
+	You should be connected and be able to view files
+	To create a new file just right click any where around the files and select new file
+
+Note: apsync.local only works if the computer is connected to the raspberry pi
+	  10.129.x.x works for any computer on techs wifi
+	  
+				
+				
+		
+	
+	

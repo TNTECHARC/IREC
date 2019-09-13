@@ -1,0 +1,2 @@
+ssh <changme>@<ip address>
+password = "pixhawk"

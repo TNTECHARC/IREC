@@ -37,7 +37,7 @@ How to write bash script on raspberry pi:
 http://www.circuitbasics.com/how-to-write-and-run-a-shell-script-on-the-raspberry-pi/
 
 How to run bash script on raspberry pi startup:
-https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/
+https://www.raspberrypi.org/documentation/linux/usage/rc-local.md
 
 
 

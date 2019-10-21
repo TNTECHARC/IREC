@@ -8,22 +8,20 @@ First time connecting
 		https://download.info.apple.com/Mac_OS_X/061-8098.20100603.gthyu/BonjourPSSetup.exe
 
 Instructions to connect to pi
-	Connect the pi using the usb between the mini hdmi and other usb, to your computer
-	wait about 30s-1m
-	open putty and enter "apsync.local" into hostname(or Ip address) field
-	click open
-	if prompted with popup window click yes
-	when you get to the terminal the type "pi" for username and "pixhawk" for the password
-	
-Once connected
-	type: sudo ifconfig wlan0 down
-		  sudo ifconfig wlan0 up
-	wait 30s
-	type: ifconfig
-		In the output look in wlan0 for "inet 10.129.x.x"
-			if inet does not start with 10.129.x.x retry the command "ifconfig"
-		Note: the 10.129.x.x number can be used instead of "apsync.local" to connect to the pi
-	You are now good to go 
+	You have two options
+		1: usb (required if you are the only one connecting)
+		2: wifi (anyone not using the usb connection can use this)
+
+	1:	open putty and enter "apsync.local" into hostname(or Ip address) field
+		click open
+		if prompted with popup window click yes
+		when you get to the terminal the type "apsync" for username and "apsync" for the password
+
+	2:	connect the wifi named "ardupilot" the password is "ardupilot"
+		open putty and enter "10.0.1.128" into hostname(or Ip address) field
+		click open
+		if prompted with popup window click yes
+		when you get to the terminal the type "apsync" for username and "apsync" for the password
 	
 Edit files on pi using notepad++ on windows
 	Download notepad++

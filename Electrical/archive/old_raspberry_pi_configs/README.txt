@@ -2,7 +2,7 @@ These are some config files required to setup the raspberry pi.
 When raspberry pi first flashed; ssh, NetworkManager, and wpa_supplicant must me place on the boot partion befor first boot
 
 
-wpa_supplicant.conf
+wpa_supplicant.conf (ignore if using apsync raspberry pi image)
     file to store wifi credentials
 
 mac.txt 

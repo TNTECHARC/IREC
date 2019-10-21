@@ -1,0 +1,8 @@
+The raspberry pi and pixhawk connection was mainly done by using this tutorial
+http://ardupilot.org/dev/docs/raspberry-pi-via-mavlink.html
+
+Exceptions to the tutorial:
+    the only exception was to use a baudrate of 57600 because anything above that would cause errors.
+    the usb is configure as an eithenet port
+
+little setup should be needed if you use the config files in raspi_config_files

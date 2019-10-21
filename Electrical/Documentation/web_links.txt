@@ -1,0 +1,21 @@
+Main info pages
+    General setup
+    http://ardupilot.org/copter/
+
+    develoment
+    http://ardupilot.org/dev/
+
+setting up raspberry pi 
+http://ardupilot.org/dev/docs/raspberry-pi-via-mavlink.html
+http://firmware.ap.ardupilot.org/Companion/apsync/
+
+Mavlink commands
+https://mavlink.io/en/messages/common.html
+
+Mission planning
+http://ardupilot.org/copter/docs/common-mission-planning.html
+
+mission planner(software)
+http://ardupilot.org/planner/
+
+

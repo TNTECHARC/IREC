@@ -1,0 +1,6 @@
+the pixhawk runs ardupilot
+the software used setup and configure pixhawk is called "mission planner" (there are other softwares btw)
+
+reminders:
+    make sure to do an esc calabration (important)
+    setting up the coumpass is a pain

@@ -1,5 +1,5 @@
-This the electrical side of the IREC drone
-Here is how navagate:
+Welcome to the electrical side of the IREC drone!
+Here is how to navagate:
 
 archive = where old files are stored for reference
 
